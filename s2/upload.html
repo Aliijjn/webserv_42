@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Upload file</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="home.html"><H1>Home</H1></a></li>
+					<li><a href="hallo.html"><H1>Hallo</H1></a></li>
+					<li><a href="test.html"><H1>Test</H1></a></li>
+					<li><a href="upload.html" class="active"><H1>Upload</H1></a></li>
+				</ul>
+			</nav>
+		</header>
+		<main class ="home">
+			<div>
+				<form action="/www" method="POST" enctype="multipart/form-data">
+					<label for="file">Choose a file to upload:</label>
+					<input type="file" id="file" name="file" required>
+					<br><br>
+					<button type="submit">Upload File</button>
+				</form>
+			</div>
+	</main>
+</body>
+</html>

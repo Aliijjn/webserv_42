@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Test CGI</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="home.html"><H1>Home</H1></a></li>
+				<li><a href="hallo.html"><H1>Hallo</H1></a></li>
+				<li><a href="test.html" class="active"><H1>Test</H1></a></li>
+				<li><a href="upload.html"><H1>Upload</H1></a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="home">
+		<div>
+			<form action="/cgi-bin/process.py" method="post">
+				<label for="name">Name:</label><br>
+				<input type="text" id="name" name="name" required><br><br>
+				<label for="email">Email:</label><br>
+				<input type="email" id="email" name="email" required><br><br>
+				<label for="message">Message:</label><br>
+				<textarea id="message" name="message" required></textarea><br><br>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+		<div>
+			<a href="/cgi-bin/time.py" class="button">What's the py time??</a>
+			<a href="/cgi-bin/time.php" class="button">What's the php time??</a>
+			<a href="/cgi-bin/infinite.py" class="button">Infinite loop</a>
+		</div>
+	</main>
+</body>
+</html>
