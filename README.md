@@ -73,7 +73,7 @@ SERVER	server1
 	]
 
 	PAGE_201		errorPages/201.html
-	PAGE_400		errorPages/400.html
+	PAGE_404		errorPages/404.html
 	PAGE_413		errorPages/413.html
 	PAGE_405		errorPages/405.html
 }
